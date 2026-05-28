@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rugby's Roaming Gazette — Chronicle of the Material Plane</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="starfield"></canvas>
+
+  <header class="site-header">
+    <div class="header-rule top"></div>
+    <p class="header-byline">EST. 3865 &mdash; CONOPIMALIS, EREPEC, KINGDOM OF SQUIYLES</p>
+    <h1 class="gazette-title">Rugby's Roaming Gazette</h1>
+    <p class="gazette-subtitle">Chronicle of the Material Plane</p>
+    <p class="gazette-tagline">News From Around The World &nbsp;&mdash;&nbsp; Your Trustworthy Source</p>
+    <div class="header-rule bottom"></div>
+  </header>
+
+  <section class="intro-section">
+    <div class="intro-box">
+      <p>What follows is a complete record of events as reported by the Gazette — from the first shots of the Binneth-Squiyles War through the final silence of the stars. These pages were written in real time, read by those who lived it, feared it, and ultimately could not stop it. New publications whenever we felt like it.</p>
+    </div>
+  </section>
+
+  <section class="timeline-section">
+    <h2 class="section-title">The Chronicle</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section class="archive-section">
+    <h2 class="section-title">The Archive</h2>
+    <p class="archive-subtitle">Every issue of the Gazette, preserved in full.</p>
+    <div class="archive-grid" id="archive-grid"></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <p class="footer-name">Rugby's Roaming Gazette</p>
+    <p class="footer-tagline">New Publications Whenever We Feel Like It.</p>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-label="Event detail">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-inner" id="modal-inner"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
